@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FSM</string>
+    <string name="lock">LOCK</string>
+    <string name="unlock">UNLOCK</string>
+    <string name="lockx2">LOCK_2</string>
+    <string name="unlockx2">UNLOCK_2</string>
+    <string name="disarmed">DISARMED</string>
+</resources>

@@ -1,0 +1,34 @@
+{
+  "AlarmDisarmed_AllUnLocked": [
+    {
+      "LOCK": "AlarmDisarmed_AllLocked",
+      "UNLOCK": "AlarmDisarmed_AllUnLocked",
+      "LOCK_2": "AlarmArmed_AllLocked",
+      "UNLOCK_2": "AlarmDisarmed_AllUnLocked"
+    }
+  ],
+  "AlarmDisarmed_DriverUnLocked": [
+    {
+      "LOCK": "AlarmDisarmed_AllLocked",
+      "UNLOCK": "AlarmDisarmed_DriverUnLocked",
+      "LOCK_2": "AlarmArmed_AllLocked",
+      "UNLOCK_2": "AlarmDisarmed_DriverUnLocked"
+    }
+  ],
+  "AlarmDisarmed_AllLocked": [
+    {
+      "LOCK": "AlarmArmed_AllLocked",
+      "UNLOCK": "AlarmDisarmed_DriverUnLocked",
+      "LOCK_2": "AlarmArmed_AllLocked",
+      "UNLOCK_2": "AlarmDisarmed_AllUnLocked"
+    }
+  ],
+  "AlarmArmed_AllLocked": [
+    {
+      "LOCK": "AlarmArmed_AllLocked",
+      "UNLOCK": "AlarmDisarmed_DriverUnLocked",
+      "LOCK_2": "AlarmArmed_AllLocked",
+      "UNLOCK_2": "AlarmDisarmed_AllUnLocked"
+    }
+  ]
+}

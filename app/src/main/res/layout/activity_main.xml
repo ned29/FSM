@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.nedvy.fsm.view.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorDisarmed">
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disarmed"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_dp"
+        android:layout_weight="1"
+        android:text="@string/lock" />
+
+    <Button
+        android:id="@+id/unlock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_dp"
+        android:layout_weight="1"
+        android:text="@string/unlock" />
+
+    <Button
+        android:id="@+id/lockx2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_dp"
+        android:layout_weight="1"
+        android:text="@string/lockx2" />
+
+    <Button
+        android:id="@+id/unlockx2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_dp"
+        android:layout_weight="1"
+        android:text="@string/unlockx2" />
+
+</LinearLayout>
