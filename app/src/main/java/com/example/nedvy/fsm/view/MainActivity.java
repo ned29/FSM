@@ -9,19 +9,18 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.nedvy.fsm.FSMUseCase;
 import com.example.nedvy.fsm.R;
 import com.example.nedvy.fsm.model.enums.State;
-import com.example.nedvy.fsm.presenter.FSMPresenter;
+import com.example.nedvy.fsm.view.presenter.FSMPresenter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity implements FSMUseCase.View {
+public class MainActivity extends AppCompatActivity implements FSMActivityUseCase.View {
 
     @Nullable
-    FSMUseCase.Presenter presenter;
+    FSMActivityUseCase.Presenter presenter;
 
     @BindView(R.id.relative)
     RelativeLayout relativeLayout;

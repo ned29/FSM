@@ -1,11 +1,10 @@
-package com.example.nedvy.fsm.presenter;
+package com.example.nedvy.fsm.view.presenter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
-import com.example.nedvy.fsm.FSMUseCase;
+import com.example.nedvy.fsm.view.FSMActivityUseCase;
 import com.example.nedvy.fsm.model.ActionBody;
 import com.example.nedvy.fsm.model.enums.Action;
 import com.example.nedvy.fsm.model.enums.State;
@@ -15,12 +14,10 @@ import com.example.nedvy.fsm.model.parser.JsonParser;
 import java.util.List;
 import java.util.Map;
 
-import static android.content.ContentValues.TAG;
-
-public class FSMPresenter implements FSMUseCase.Presenter {
+public class FSMPresenter implements FSMActivityUseCase.Presenter {
 
     @Nullable
-    private FSMUseCase.View view;
+    private FSMActivityUseCase.View view;
 
     @NonNull
     private static Map<State, List<ActionBody>> config;
@@ -28,7 +25,7 @@ public class FSMPresenter implements FSMUseCase.Presenter {
     @NonNull
     private FSM fsm;
 
-    public FSMPresenter(@NonNull FSMUseCase.View view) {
+    public FSMPresenter(@NonNull FSMActivityUseCase.View view) {
         this.view = view;
     }
 

@@ -1,11 +1,11 @@
-package com.example.nedvy.fsm;
+package com.example.nedvy.fsm.view;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.example.nedvy.fsm.model.enums.State;
 
-public interface FSMUseCase {
+public interface FSMActivityUseCase {
 
     interface View {
 
